@@ -19,10 +19,15 @@ FiveThirtyEight Data
 | usually_republican   | Percent chance of being reresented by a Republic  |
 | highly_competitive   | Percent chance of being reresented by a Rep or Dem|
 
-
-
-
 Congressional Data
+|Variable              |Descritpion                                        |
+| -------------------- | ------------------------------------------------- |
+| ID                   | identification of the district within the state   |
+| Total pop            | total population within the district              |
+| Dem                  | percentage of Democratic lean within the district |
+| Rep                  | percentage of Republican lean within the district |
+
+To acquire state data, we are using FiveThirtyEight's “The Gerrymandering Project.” The project also provides district boundaries of the states that match the partisan breakdown of seats to the electorate to compare with the actual boundaries. To validate our model we used  the 2022 congressional map of the states from Dave's Redistricting 2020 website.
 ## Figures
 
 ## References
