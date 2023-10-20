@@ -28,6 +28,8 @@ Congressional Data
 | Rep                  | percentage of Republican lean within the district |
 
 To acquire state data, we are using FiveThirtyEight's “The Gerrymandering Project.” The project also provides district boundaries of the states that match the partisan breakdown of seats to the electorate to compare with the actual boundaries. To validate our model we used  the 2022 congressional map of the states from Dave's Redistricting 2020 website.
+
+The images we used can be found at this link: 
 ## Figures
 
 ## References
