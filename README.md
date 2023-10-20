@@ -9,6 +9,8 @@ Gerrymandering Image Analysis
 
 ## SRC
 ### Installing Code
+We used Python version 3.8.8. The packages used were numpy version 1.20.1, pandas version 1.2.4 , Pillow version 8.2.0, and
+scipy version 1.6.2.
 ### Usage
 
 ## Data
