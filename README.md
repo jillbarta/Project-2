@@ -12,6 +12,7 @@ Gerrymandering Image Analysis
 We used Python version 3.8.8. The packages used were numpy version 1.20.1, pandas version 1.2.4 , Pillow version 8.2.0, and
 scipy version 1.6.2.
 ### Usage
+We first started by loading in the images of the states. We found the pixel count for blue, red, and purple for each state with current district boundaries. Next we found counts of pixels for each shade of blue, red, and purple for each state with hypothetical non-gerrymandered district boundaries. We then performed a chi-squared test using these counts for each state to determine if there is a significant difference in counts for current vs. non-gerrymandered districts. To verify our model, we loaded in and cleaned the data from Dave's Redistricting congressional votes for each state's districts. We then calculated the declination angle which verifys whether or not gerrymandering has occurred. We then compared our results with the declination angle results to test the accuracy of our results. 
 
 ## Data
 FiveThirtyEight Data
