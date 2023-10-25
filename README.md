@@ -45,6 +45,8 @@ The images we used can be found at this link: https://drive.google.com/drive/fol
 
 
 ## References
+Chinoy, S. (2020, October 7). Gerrymandering: The declination function. Observable.   			https://observablehq.com/@sahilchinoy/gerrymandering-the-declination-function 
+
 Hendricks, T. (2021, December 10). Detecting and measuring gerrymandering with python. Medium. https://towardsdatascience.com/detecting-and-measuring- gerrymandering -with-python-f85a1315acd4 
 
 Bycoffe, A., Koeze, E., Wasserman, D., & Wolfe, J. (2018, January 25). The Atlas Of Redistricting. FiveThirtyEight. https://projects.fivethirtyeight.com/ redistricting- maps/virginia/
