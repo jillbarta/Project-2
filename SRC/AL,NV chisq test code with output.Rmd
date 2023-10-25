@@ -1,0 +1,67 @@
+---
+title: "AL and NV chisq tests"
+author: "Tigers"
+date: "2023-10-25"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, warning=FALSE}
+# ALABAMA
+AL_current_darkred <- 46486 + 169462 + 232850 + 78210 
+AL_current_mediumred <- 1
+AL_current_lightred <- 1
+AL_current_purple <- 1
+AL_current_lightblue <- 1
+AL_current_darkblue <- 131047
+
+
+AL_prop_part_darkred <- 243463 + 59497 + 95503
+AL_prop_part_mediumred <- 1
+AL_prop_part_lightred <- 1
+AL_prop_part_purple <- 1
+AL_prop_part_lightblue <- 177758
+AL_prop_part_darkblue <- 84938
+
+AL_current <- as.data.frame(cbind(AL_current_darkred, AL_current_mediumred, AL_current_lightred, AL_current_purple, AL_current_lightblue, AL_current_darkblue))
+AL_prop_part <- as.data.frame(cbind(AL_prop_part_darkred, AL_prop_part_mediumred, AL_prop_part_lightred, AL_prop_part_purple, AL_prop_part_lightblue, AL_prop_part_darkblue))
+
+rownames(AL_current) <- c("Current")
+rownames(AL_prop_part) <- c("Non-gerrymandered")
+colnames(AL_current) <- c("Dark red", "Medium red", "Light red", "Purple", "Light blue", "Dark blue")
+colnames(AL_prop_part) <- c("Dark red", "Medium red", "Light red", "Purple", "Light blue", "Dark blue")
+AL_table <- rbind(AL_current, AL_prop_part)
+chisq.test(AL_table)
+```
+
+```{r, warning=F}
+# NEVADA
+NV_current_darkred <- 1
+NV_current_mediumred <- 1
+NV_current_lightred <- 389424
+NV_current_purple <- 370959
+NV_current_lightblue <- 1
+NV_current_darkblue <- 380
+
+NV_prop_part_darkred <- 1
+NV_prop_part_mediumred <- 1
+NV_prop_part_lightred <- 389424
+NV_prop_part_purple <- 370959
+NV_prop_part_lightblue <- 1
+NV_prop_part_darkblue <- 380
+
+NV_current <- as.data.frame(cbind(NV_current_darkred, NV_current_mediumred, NV_current_lightred, NV_current_purple, NV_current_lightblue, NV_current_darkblue ))
+NV_prop_part <- as.data.frame(cbind(NV_prop_part_darkred, NV_prop_part_mediumred, NV_prop_part_lightred, NV_prop_part_purple, NV_prop_part_lightblue, NV_prop_part_darkblue))
+
+rownames(NV_current) <- c("Current")
+rownames(NV_prop_part) <- c("Non-gerrymandered")
+colnames(NV_current) <- c("Dark red", "Medium red", "Light red", "Purple", "Light blue", "Dark blue")
+colnames(NV_prop_part) <- c("Dark red", "Medium red", "Light red", "Purple", "Light blue", "Dark blue")
+NV_table <- rbind(NV_current, NV_prop_part)
+chisq.test(NV_table)
+
+```
+
