@@ -34,6 +34,15 @@ To acquire state data, we are using FiveThirtyEight's “The Gerrymandering Proj
 
 The images we used can be found at this link: https://drive.google.com/drive/folders/1FocnYOfHYInz-Hoalg1t-OfzWHOFYZAX?usp=sharing
 ## Figures
+### Figures Table
+|State        | P-Value     | Interpretation            | Declination Angle   |
+|-------------|-------------|---------------------------|---------------------|
+|Virginia     |   0.0       |There is gerrymandering    | 0.37^*              |
+|New Mexico   |    1        |There is no gerrymandering | -0.17               |
+|Massachusetts|   0.0       |There is gerrymandering    |                     |
+|Alabmama     |   0.0       |There is gerrymandering    |0.55^*               |
+|Nevada       |    1        |There is no gerrymandering |-0.35                |
+
 
 ## References
 Hendricks, T. (2021, December 10). Detecting and measuring gerrymandering with python. Medium. https://towardsdatascience.com/detecting-and-measuring- gerrymandering -with-python-f85a1315acd4 
